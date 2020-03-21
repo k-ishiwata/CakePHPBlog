@@ -3,7 +3,7 @@
 use Cake\Cache\Engine\FileEngine;
 use Cake\Database\Connection;
 use Cake\Database\Driver\Mysql;
-use Cake\Database\Driver\Sqlite;
+// use Cake\Database\Driver\Sqlite;
 use Cake\Error\ExceptionRenderer;
 use Cake\Log\Engine\FileLog;
 use Cake\Mailer\Transport\MailTransport;
@@ -272,17 +272,9 @@ return [
          */
         'default' => [
             'className' => Connection::class,
-            'driver' => Sqlite::class,
+            'driver' => Mysql::class,
             'persistent' => false,
-            // 'username' => '',
-            // 'password' => '',
-            'database' => ROOT . DS . 'database' . DS . 'product.sqlite',
-            // 'encoding' => 'utf8',
-
-            // 'className' => Connection::class,
-            // 'driver' => Mysql::class,
-            // 'persistent' => false,
-            // 'timezone' => 'UTC',
+            'timezone' => 'UTC',
 
             /**
              * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6
