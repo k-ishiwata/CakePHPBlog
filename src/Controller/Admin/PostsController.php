@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AdminController;
 /**
  * Posts Controller
  *
@@ -11,7 +11,7 @@ use App\Controller\AppController;
  *
  * @method \App\Model\Entity\Post[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class PostsController extends AppController
+class PostsController extends AdminController
 {
     /**
      * Index method
