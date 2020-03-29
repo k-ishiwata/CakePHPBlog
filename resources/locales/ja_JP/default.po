@@ -1,0 +1,224 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-03-28 14:22+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/PostsController.php:55
+#: Controller/Admin/PostsController.php:79
+msgid "The post has been saved."
+msgstr "投稿が保存されました。"
+
+#: Controller/Admin/PostsController.php:59
+#: Controller/Admin/PostsController.php:83
+msgid "The post could not be saved. Please, try again."
+msgstr "投稿を保存できませんでした。 もう一度やり直してください。"
+
+#: Controller/Admin/PostsController.php:100
+msgid "The post has been deleted."
+msgstr "投稿が削除されました。"
+
+#: Controller/Admin/PostsController.php:102
+msgid "The post could not be deleted. Please, try again."
+msgstr "投稿を削除できませんでした。 もう一度やり直してください。"
+
+#: Controller/Admin/UsersController.php:55
+#: Controller/Admin/UsersController.php:79
+msgid "The user has been saved."
+msgstr "ユーザーが保存されました。"
+
+#: Controller/Admin/UsersController.php:59
+#: Controller/Admin/UsersController.php:83
+msgid "The user could not be saved. Please, try again."
+msgstr "ユーザーを保存できませんでした。 もう一度やり直してください。"
+
+#: Controller/Admin/UsersController.php:100
+msgid "The user has been deleted."
+msgstr "ユーザーが削除されました。"
+
+#: Controller/Admin/UsersController.php:102
+msgid "The user could not be deleted. Please, try again."
+msgstr "ユーザーを削除できませんでした。 もう一度やり直してください。"
+
+#: Admin/Posts/add.php:10
+#: Admin/Posts/edit.php:10
+#: Admin/Posts/index.php:19
+#: Admin/Posts/view.php:10
+#: Admin/Users/add.php:10
+#: Admin/Users/edit.php:10
+#: Admin/Users/index.php:19
+#: Admin/Users/view.php:10
+msgid "Actions"
+msgstr "アクション"
+
+#: Admin/Posts/add.php:11
+#: Admin/Posts/edit.php:16
+#: Admin/Posts/view.php:13
+msgid "List Posts"
+msgstr "投稿一覧"
+
+#: Admin/Posts/add.php:18
+msgid "Add Post"
+msgstr "新規投稿"
+
+#: Admin/Posts/add.php:25
+#: Admin/Posts/edit.php:30
+#: Admin/Users/add.php:24
+#: Admin/Users/edit.php:29
+msgid "Submit"
+msgstr "送信"
+
+#: Admin/Posts/edit.php:12
+#: Admin/Posts/index.php:33
+#: Admin/Users/edit.php:12
+#: Admin/Users/index.php:33
+msgid "Delete"
+msgstr "削除"
+
+#: Admin/Posts/edit.php:14
+#: Admin/Posts/index.php:33
+#: Admin/Posts/view.php:12
+#: Admin/Users/edit.php:14
+#: Admin/Users/index.php:33
+#: Admin/Users/view.php:12
+msgid "Are you sure you want to delete # {0}?"
+msgstr "{0}を消去してもよろしいですか？"
+
+#: Admin/Posts/edit.php:23
+#: Admin/Posts/view.php:11
+msgid "Edit Post"
+msgstr "投稿の編集"
+
+#: Admin/Posts/index.php:8
+#: Admin/Posts/view.php:14
+msgid "New Post"
+msgstr "新規投稿"
+
+#: Admin/Posts/index.php:9
+msgid "Posts"
+msgstr "投稿一覧"
+
+#: Admin/Posts/index.php:31
+#: Admin/Users/index.php:31
+msgid "View"
+msgstr "表示"
+
+#: Admin/Posts/index.php:32
+#: Admin/Users/index.php:32
+msgid "Edit"
+msgstr "編集"
+
+#: Admin/Posts/index.php:42
+#: Admin/Users/index.php:42
+msgid "first"
+msgstr "最初へ"
+
+#: Admin/Posts/index.php:43
+#: Admin/Users/index.php:43
+msgid "previous"
+msgstr "前へ"
+
+#: Admin/Posts/index.php:45
+#: Admin/Users/index.php:45
+msgid "next"
+msgstr "次へ"
+
+#: Admin/Posts/index.php:46
+#: Admin/Users/index.php:46
+msgid "last"
+msgstr "最後へ"
+
+#: Admin/Posts/index.php:48
+#: Admin/Users/index.php:48
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "{{pages}}ページ中{{page}}, 合計{{count}}のうち{{current}}レコードを表示"
+
+#: Admin/Posts/view.php:12
+msgid "Delete Post"
+msgstr "投稿の削除"
+
+#: Admin/Posts/view.php:22
+msgid "Title"
+msgstr "タイトル"
+
+#: Admin/Posts/view.php:26
+#: Admin/Users/view.php:30
+msgid "Id"
+msgstr "ID"
+
+#: Admin/Posts/view.php:30
+#: Admin/Users/view.php:34
+msgid "Created"
+msgstr "作成日"
+
+#: Admin/Posts/view.php:34
+#: Admin/Users/view.php:38
+msgid "Modified"
+msgstr "編集日"
+
+#: Admin/Posts/view.php:38
+msgid "Published"
+msgstr "公開"
+
+#: Admin/Posts/view.php:39
+msgid "Yes"
+msgstr "はい"
+
+#: Admin/Posts/view.php:39
+msgid "No"
+msgstr "いいえ"
+
+#: Admin/Posts/view.php:43
+msgid "Body"
+msgstr "内容"
+
+#: Admin/Users/add.php:11
+#: Admin/Users/edit.php:16
+#: Admin/Users/view.php:13
+msgid "List Users"
+msgstr "ユーザー一覧"
+
+#: Admin/Users/add.php:18
+msgid "Add User"
+msgstr "新規ユーザー"
+
+#: Admin/Users/edit.php:23
+#: Admin/Users/view.php:11
+msgid "Edit User"
+msgstr "ユーザーの編集"
+
+#: Admin/Users/index.php:8
+#: Admin/Users/view.php:14
+msgid "New User"
+msgstr "新規ユーザー"
+
+#: Admin/Users/index.php:9
+msgid "Users"
+msgstr "ユーザー一覧"
+
+#: Admin/Users/view.php:12
+msgid "Delete User"
+msgstr "ユーザーの削除"
+
+#: Admin/Users/view.php:22
+msgid "Username"
+msgstr "ユーザー名"
+
+#: Admin/Users/view.php:26
+msgid "Password"
+msgstr "パスワード"
+
+#: layout/error.php:40
+msgid "Back"
+msgstr "戻る"
+

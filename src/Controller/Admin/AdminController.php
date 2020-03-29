@@ -18,7 +18,6 @@ namespace App\Controller\Admin;
 
 use Cake\Controller\Controller;
 use Cake\Event\EventInterface;
-
 /**
  * Application Controller
  *
@@ -46,11 +45,11 @@ class AdminController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
             'loginRedirect' => [
-                'controller' => 'Admin\Posts',
+                'controller' => 'Posts',
                 'action' => 'index'
             ],
             'logoutRedirect' => [
-                'controller' => 'Admin\Users',
+                'controller' => 'Users',
                 'action' => 'login'
             ]
         ]);

@@ -35,7 +35,9 @@
             <a href="/admin/">Controle Panel</a>
         </div>
         <div class="top-nav-links">
-            <a href="/admin/user/logout">ログアウト</a>
+            <a href="/admin/posts">投稿</a>
+            <a href="/admin/users">ユーザー</a>
+            <a href="/admin/users/logout">ログアウト</a>
         </div>
     </nav>
     <main class="main">

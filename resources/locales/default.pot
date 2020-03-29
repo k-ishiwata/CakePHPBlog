@@ -1,0 +1,242 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-03-28 14:22+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/HogesController.php:54
+#: Controller/Admin/HogesController.php:78
+msgid "The hoge has been saved."
+msgstr ""
+
+#: Controller/Admin/HogesController.php:58
+#: Controller/Admin/HogesController.php:82
+msgid "The hoge could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/HogesController.php:99
+msgid "The hoge has been deleted."
+msgstr ""
+
+#: Controller/Admin/HogesController.php:101
+msgid "The hoge could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:55
+#: Controller/Admin/PostsController.php:79
+msgid "The post has been saved."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:59
+#: Controller/Admin/PostsController.php:83
+msgid "The post could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:100
+msgid "The post has been deleted."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:102
+msgid "The post could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:55
+#: Controller/Admin/UsersController.php:79
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:59
+#: Controller/Admin/UsersController.php:83
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:100
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:102
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Admin/Posts/add.php:10
+#: Admin/Posts/edit.php:10
+#: Admin/Posts/index.php:19
+#: Admin/Posts/view.php:10
+#: Admin/Users/add.php:10
+#: Admin/Users/edit.php:10
+#: Admin/Users/index.php:19
+#: Admin/Users/view.php:10
+msgid "Actions"
+msgstr ""
+
+#: Admin/Posts/add.php:11
+#: Admin/Posts/edit.php:16
+#: Admin/Posts/view.php:13
+msgid "List Posts"
+msgstr ""
+
+#: Admin/Posts/add.php:18
+msgid "Add Post"
+msgstr ""
+
+#: Admin/Posts/add.php:25
+#: Admin/Posts/edit.php:30
+#: Admin/Users/add.php:24
+#: Admin/Users/edit.php:29
+msgid "Submit"
+msgstr ""
+
+#: Admin/Posts/edit.php:12
+#: Admin/Posts/index.php:33
+#: Admin/Users/edit.php:12
+#: Admin/Users/index.php:33
+msgid "Delete"
+msgstr ""
+
+#: Admin/Posts/edit.php:14
+#: Admin/Posts/index.php:33
+#: Admin/Posts/view.php:12
+#: Admin/Users/edit.php:14
+#: Admin/Users/index.php:33
+#: Admin/Users/view.php:12
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Admin/Posts/edit.php:23
+#: Admin/Posts/view.php:11
+msgid "Edit Post"
+msgstr ""
+
+#: Admin/Posts/index.php:8
+#: Admin/Posts/view.php:14
+msgid "New Post"
+msgstr ""
+
+#: Admin/Posts/index.php:9
+msgid "Posts"
+msgstr ""
+
+#: Admin/Posts/index.php:31
+#: Admin/Users/index.php:31
+msgid "View"
+msgstr ""
+
+#: Admin/Posts/index.php:32
+#: Admin/Users/index.php:32
+msgid "Edit"
+msgstr ""
+
+#: Admin/Posts/index.php:42
+#: Admin/Users/index.php:42
+msgid "first"
+msgstr ""
+
+#: Admin/Posts/index.php:43
+#: Admin/Users/index.php:43
+msgid "previous"
+msgstr ""
+
+#: Admin/Posts/index.php:45
+#: Admin/Users/index.php:45
+msgid "next"
+msgstr ""
+
+#: Admin/Posts/index.php:46
+#: Admin/Users/index.php:46
+msgid "last"
+msgstr ""
+
+#: Admin/Posts/index.php:48
+#: Admin/Users/index.php:48
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Admin/Posts/view.php:12
+msgid "Delete Post"
+msgstr ""
+
+#: Admin/Posts/view.php:22
+msgid "Title"
+msgstr "タイトル"
+
+#: Admin/Posts/view.php:26
+#: Admin/Users/view.php:30
+msgid "Id"
+msgstr ""
+
+#: Admin/Posts/view.php:30
+#: Admin/Users/view.php:34
+msgid "Created"
+msgstr ""
+
+#: Admin/Posts/view.php:34
+#: Admin/Users/view.php:38
+msgid "Modified"
+msgstr ""
+
+#: Admin/Posts/view.php:38
+msgid "Published"
+msgstr ""
+
+#: Admin/Posts/view.php:39
+msgid "Yes"
+msgstr ""
+
+#: Admin/Posts/view.php:39
+msgid "No"
+msgstr ""
+
+#: Admin/Posts/view.php:43
+msgid "Body"
+msgstr ""
+
+#: Admin/Users/add.php:11
+#: Admin/Users/edit.php:16
+#: Admin/Users/view.php:13
+msgid "List Users"
+msgstr ""
+
+#: Admin/Users/add.php:18
+msgid "Add User"
+msgstr ""
+
+#: Admin/Users/edit.php:23
+#: Admin/Users/view.php:11
+msgid "Edit User"
+msgstr ""
+
+#: Admin/Users/index.php:8
+#: Admin/Users/view.php:14
+msgid "New User"
+msgstr ""
+
+#: Admin/Users/index.php:9
+msgid "Users"
+msgstr ""
+
+#: Admin/Users/view.php:12
+msgid "Delete User"
+msgstr ""
+
+#: Admin/Users/view.php:22
+msgid "Username"
+msgstr ""
+
+#: Admin/Users/view.php:26
+msgid "Password"
+msgstr ""
+
+#: layout/error.php:40
+msgid "Back"
+msgstr ""
+
