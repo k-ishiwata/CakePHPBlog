@@ -43,17 +43,7 @@ class AdminController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth', [
-            'authError' => 'このページにアクセスするにはログインが必要です。',
-            'loginRedirect' => [
-                'controller' => 'Posts',
-                'action' => 'index'
-            ],
-            'logoutRedirect' => [
-                'controller' => 'Users',
-                'action' => 'login'
-            ]
-        ]);
+        $this->loadComponent('Authentication.Authentication');
 
         /*
          * Enable the following component for recommended CakePHP form protection settings.

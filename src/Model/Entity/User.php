@@ -42,10 +42,10 @@ class User extends Entity
         'password',
     ];
 
-    protected function _setPassword($password)
+    protected function _setPassword(string $password) : ?string
     {
         if (strlen($password) > 0) {
-            return (new DefaultPasswordHasher)->hash($password);
+            return (new DefaultPasswordHasher())->hash($password);
         }
     }
 }

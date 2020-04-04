@@ -13,6 +13,13 @@ use App\Controller\Admin\AdminController;
  */
 class UsersController extends AdminController
 {
+    public function beforeFilter(\Cake\Event\EventInterface $event)
+    {
+        parent::beforeFilter($event);
+        // ログインページは認証解除
+        $this->Authentication->addUnauthenticatedActions(['login']);
+    }
+
     /**
      * Index method
      *
@@ -105,21 +112,27 @@ class UsersController extends AdminController
         return $this->redirect(['action' => 'index']);
     }
 
-
     public function login()
     {
-        if ($this->request->is('post')) {
-            $user = $this->Auth->identify();
-            if ($user) {
-                $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
-            }
-            $this->Flash->error('ユーザー名かパスワードが間違っています。');
+        $this->request->allowMethod(['get', 'post']);
+        $result = $this->Authentication->getResult();
+        // ログインした場合はリダイレクト
+        if ($result->isValid()) {
+            return $this->redirect('/admin');
+        }
+        // 認証失敗した場合はエラーを表示
+        if ($this->request->is('post') && !$result->isValid()) {
+            $this->Flash->error('ユーザー名かパスワードが正しくありません。');
         }
     }
 
     public function logout()
     {
-        return $this->redirect($this->Auth->logout());
+        $result = $this->Authentication->getResult();
+        // ログインした場合はリダイレクト
+        if ($result->isValid()) {
+            $this->Authentication->logout();
+            return $this->redirect(['controller' => 'Users', 'action' => 'login']);
+        }
     }
 }
