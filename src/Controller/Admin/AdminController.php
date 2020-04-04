@@ -44,6 +44,7 @@ class AdminController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
+            'authError' => 'このページにアクセスするにはログインが必要です。',
             'loginRedirect' => [
                 'controller' => 'Posts',
                 'action' => 'index'

@@ -59,14 +59,14 @@ class UsersTable extends Table
             ->allowEmptyString('id', null, 'create');
 
         $validator
-            ->scalar('name')
-            ->maxLength('name', 50)
-            ->allowEmptyString('name');
+            ->scalar('username')
+            ->notEmpty('username', 'ユーザー名は必ず入力してください')
+            ->maxLength('username', 50);
 
         $validator
             ->scalar('password')
-            ->maxLength('password', 255)
-            ->allowEmptyString('password');
+            ->notEmpty('password', 'パスワードは必ず入力してください')
+            ->maxLength('password', 255);
 
         return $validator;
     }
