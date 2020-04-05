@@ -40,7 +40,7 @@
                 </tr>
             </table>
             <div class="text">
-                <strong><?= __('Body') ?></strong>
+                <strong><?= __('Description') ?></strong>
                 <blockquote>
                     <?= $this->Text->autoParagraph(h($post->description)); ?>
                 </blockquote>
