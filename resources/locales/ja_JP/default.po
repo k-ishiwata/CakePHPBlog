@@ -178,6 +178,9 @@ msgstr "はい"
 msgid "No"
 msgstr "いいえ"
 
+msgid "Description"
+msgstr "概要"
+
 #: Admin/Posts/view.php:43
 msgid "Body"
 msgstr "内容"

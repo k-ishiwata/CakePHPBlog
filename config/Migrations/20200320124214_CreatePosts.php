@@ -16,8 +16,11 @@ class CreatePosts extends AbstractMigration
     {
         $table = $this->table('posts');
         $table->addColumn('title', 'string', [
-                'limit' => 255,
+                'limit' => 150,
                 'null' => false,
+            ])
+            ->addColumn('description', 'text', [
+                'limit' => 255,
             ])
             ->addColumn('body', 'text')
             ->addColumn('published', 'boolean', [

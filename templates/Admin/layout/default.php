@@ -38,6 +38,7 @@
             <a href="/admin/posts">投稿</a>
             <a href="/admin/users">ユーザー</a>
             <a href="/admin/users/logout">ログアウト</a>
+            <a href="/">サイトの表示</a>
         </div>
     </nav>
     <main class="main">

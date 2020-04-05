@@ -42,6 +42,12 @@
             <div class="text">
                 <strong><?= __('Body') ?></strong>
                 <blockquote>
+                    <?= $this->Text->autoParagraph(h($post->description)); ?>
+                </blockquote>
+            </div>
+            <div class="text">
+                <strong><?= __('Body') ?></strong>
+                <blockquote>
                     <?= $this->Text->autoParagraph(h($post->body)); ?>
                 </blockquote>
             </div>

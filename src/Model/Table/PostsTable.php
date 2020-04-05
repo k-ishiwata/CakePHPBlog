@@ -61,8 +61,13 @@ class PostsTable extends Table
         $validator
             ->scalar('title')
             ->notEmpty('title', 'タイトルは必ず入力してください')
-            ->maxLength('title', 255, '255文字以上で入力してください。')
+            ->maxLength('title', 150, '150文字以上で入力してください。')
             ->minLength('title', 5, '5文字以上で入力してください。');
+
+        $validator
+            ->scalar('description')
+            ->maxLength('description', 255, '150文字以上で入力してください。')
+            ->allowEmptyString('description');
 
         $validator
             ->scalar('body')

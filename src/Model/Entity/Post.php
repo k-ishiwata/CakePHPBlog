@@ -28,6 +28,7 @@ class Post extends Entity
      */
     protected $_accessible = [
         'title' => true,
+        'description' => true,
         'body' => true,
         'published' => true,
         'created' => true,
