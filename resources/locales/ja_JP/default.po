@@ -225,3 +225,5 @@ msgstr "パスワード"
 msgid "Back"
 msgstr "戻る"
 
+msgid "User"
+msgstr "ユーザー"

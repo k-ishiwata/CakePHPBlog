@@ -13,6 +13,7 @@
                 <tr>
                     <th><?= $this->Paginator->sort('id') ?></th>
                     <th><?= $this->Paginator->sort('title') ?></th>
+                    <th><?= $this->Paginator->sort('user_id') ?></th>
                     <th><?= $this->Paginator->sort('published') ?></th>
                     <th><?= $this->Paginator->sort('created') ?></th>
                     <th><?= $this->Paginator->sort('modified') ?></th>
@@ -24,7 +25,8 @@
                 <tr>
                     <td><?= $this->Number->format($post->id) ?></td>
                     <td><?= h($post->title) ?></td>
-                    <td><?= h($post->published) ?></td>
+                    <td><?= h($post->user->username) ?></td>
+                    <td><?= $post->published ? __('Yes') : __('No'); ?></td>
                     <td><?= h($post->created) ?></td>
                     <td><?= h($post->modified) ?></td>
                     <td class="actions">

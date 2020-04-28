@@ -28,6 +28,9 @@ class PostsController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Users']
+        ];
         $posts = $this->paginate($this->Posts->findByPublished(1));
 
         $this->set(compact('posts'));
@@ -43,13 +46,9 @@ class PostsController extends AppController
     public function view($id = null)
     {
         $post = $this->Posts->get($id, [
-            'conditions' => ['published' => 1]
+            'conditions' => ['published' => 1],
+            'contain' => ['Users'],
         ]);
-
-        // $post = $this->Posts->findByPublishedAndId(1, $id)->first();
-        // if (empty($post)) {
-        //     throw new NotFoundException(__('Post not found'));
-        // }
 
         $this->set('post', $post);
     }

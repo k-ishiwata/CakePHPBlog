@@ -38,6 +38,10 @@
                     <th><?= __('Published') ?></th>
                     <td><?= $post->published ? __('Yes') : __('No'); ?></td>
                 </tr>
+                <tr>
+                    <th><?= __('User') ?></th>
+                    <td><?= h($post->user->username) ?></td>
+                </tr>
             </table>
             <div class="text">
                 <strong><?= __('Description') ?></strong>

@@ -9,6 +9,7 @@
         <p>投稿日：<time><?= h($post->created->i18nFormat('YYYY/MM/dd HH:mm:ss')) ?></time></p>
         <h3 style="margin-bottom:0"><?= h($post->title) ?></h3>
         <?= $this->Text->autoParagraph(h($post->description)); ?>
+        <p><small>投稿者: <?= h($post->user->username) ?></small></p>
         <br>
         <?= $this->Html->link('記事を読む', ['action' => 'view', $post->id], ['class' => 'button']) ?>
         <hr>
