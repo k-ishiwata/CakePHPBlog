@@ -42,4 +42,4 @@ nbproject/*
 # Sass preprocessor
 .sass-cache/
 
-database/product.sqlite
+database/*.sqlite
