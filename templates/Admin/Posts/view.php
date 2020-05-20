@@ -16,7 +16,7 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="posts view content">
-            <h3><?= h($post->title) ?></h3>
+            <h4>投稿詳細</h4>
             <table>
                 <tr>
                     <th><?= __('Title') ?></th>
@@ -36,7 +36,20 @@
                 </tr>
                 <tr>
                     <th><?= __('Published') ?></th>
-                    <td><?= $post->published ? __('Yes') : __('No'); ?></td>
+                    <td><?= $post->published ? '公開' : '非公開' ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Tag') ?></th>
+                    <td>
+                    <?php if(!empty($post->tags)): ?>
+                    <?php foreach($post->tags as $tag): ?>
+                        <?= $this->Html->link($tag->title,
+                            ['controller' => 'tags', 'action' => 'view', $tag->id]);
+                        ?>
+                        <?= $tag !== end($post->tags) ? ',' : '' ?>
+                    <?php endforeach; ?>
+                    <?php endif; ?>
+                    </td>
                 </tr>
                 <tr>
                     <th><?= __('User') ?></th>

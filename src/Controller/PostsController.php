@@ -29,7 +29,7 @@ class PostsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users']
+            'contain' => ['Users', 'Tags']
         ];
         $posts = $this->paginate($this->Posts->findByPublished(1));
 
@@ -47,7 +47,7 @@ class PostsController extends AppController
     {
         $post = $this->Posts->get($id, [
             'conditions' => ['published' => 1],
-            'contain' => ['Users'],
+            'contain' => ['Users', 'Tags'],
         ]);
 
         $this->set('post', $post);

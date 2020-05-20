@@ -17,6 +17,7 @@ class PostsController extends AdminController
     {
         parent::initialize();
         $this->loadModel('Users');
+        $this->loadModel('Tags');
     }
     /**
      * Index method
@@ -26,7 +27,10 @@ class PostsController extends AdminController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users']
+            'contain' => ['Users'],
+            'order' => [
+                'Posts.id' => 'desc'
+            ]
         ];
         $posts = $this->paginate($this->Posts);
 
@@ -43,7 +47,7 @@ class PostsController extends AdminController
     public function view($id = null)
     {
         $post = $this->Posts->get($id, [
-            'contain' => ['Users'],
+            'contain' => ['Users', 'Tags'],
         ]);
 
         $this->set('post', $post);
@@ -69,8 +73,9 @@ class PostsController extends AdminController
 
         // ユーザーリストを取得
         $users = $this->Users->find('list');
+        $tags = $this->Tags->find('list');
 
-        $this->set(compact('post', 'users'));
+        $this->set(compact('post', 'users', 'tags'));
     }
 
     /**
@@ -83,7 +88,7 @@ class PostsController extends AdminController
     public function edit($id = null)
     {
         $post = $this->Posts->get($id, [
-            'contain' => [],
+            'contain' => ['Tags'],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $post = $this->Posts->patchEntity($post, $this->request->getData());
@@ -97,8 +102,9 @@ class PostsController extends AdminController
 
         // ユーザーリストを取得
         $users = $this->Users->find('list');
+        $tags = $this->Tags->find('list');
 
-        $this->set(compact('post', 'users'));
+        $this->set(compact('post', 'users', 'tags'));
     }
 
     /**

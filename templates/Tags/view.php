@@ -1,10 +1,11 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Post[]|\Cake\Collection\CollectionInterface $posts
+ * @var \App\Model\Entity\Tag $tag
  */
 ?>
-<div class="content">
+<div class="posts view content">
+    <h2>「<?= h($tag->title) ?>」の投稿一覧</h2>
     <?php foreach ($posts as $post): ?>
         <p>投稿日：<time><?= h($post->created->i18nFormat('YYYY/MM/dd HH:mm:ss')) ?></time></p>
         <h3 style="margin-bottom:0"><?= h($post->title) ?></h3>
@@ -13,7 +14,7 @@
             <?php if(!empty($post->tags)): ?>
             <?php foreach($post->tags as $tag): ?>
                 <?= $this->Html->link($tag->title,
-                    ['controller' => 'tags', 'action' => 'view', $tag->id]);
+                    ['action' => 'view', $tag->id]);
                 ?>
                 <?= $tag !== end($post->tags) ? ',' : '' ?>
             <?php endforeach; ?> /
@@ -21,13 +22,16 @@
             投稿者: <?= h($post->user->username) ?>
         </small></p>
         <br>
-        <?= $this->Html->link('記事を読む', ['action' => 'view', $post->id], ['class' => 'button']) ?>
+        <?=
+            $this->Html->link('記事を読む',
+            ['controller' => 'Posts', 'action' => 'view', $post->id],
+            ['class' => 'button'])
+        ?>
         <hr>
     <?php endforeach; ?>
     <?php if($this->Paginator->total() > 1): ?>
     <div class="paginator">
         <ul class="pagination">
-
             <?= $this->Paginator->first('<< 最初') ?>
             <?= $this->Paginator->prev('< 前へ') ?>
             <?= $this->Paginator->numbers() ?>
@@ -36,4 +40,6 @@
         </ul>
     </div>
     <?php endif; ?>
+
+    <?= $this->Html->link('タグ一覧へ戻る', ['action' => 'index'], ['class' => 'button']) ?>
 </div>

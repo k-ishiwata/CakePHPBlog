@@ -8,7 +8,7 @@
     <?= $this->Flash->render() ?>
     <?= $this->Form->create() ?>
         <fieldset>
-            <?= $this->Form->control('username') ?>
+            <?= $this->Form->control('username', ['autofocus' => true]) ?>
             <?= $this->Form->control('password') ?>
         </fieldset>
     <?= $this->Form->button('ログイン'); ?>

@@ -1,38 +1,34 @@
 <?php
 /**
  * @var \App\View\AppView $this
- * @var \App\Model\Entity\Post[]|\Cake\Collection\CollectionInterface $posts
+ * @var \App\Model\Entity\Tag[]|\Cake\Collection\CollectionInterface $tags
  */
 ?>
-<div class="posts index content">
-    <?= $this->Html->link(__('New Post'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Posts') ?></h3>
+<div class="tags index content">
+    <?= $this->Html->link(__('New Tag'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <h3><?= __('Tags') ?></h3>
     <div class="table-responsive">
         <table>
             <thead>
                 <tr>
                     <th><?= $this->Paginator->sort('id') ?></th>
                     <th><?= $this->Paginator->sort('title') ?></th>
-                    <th><?= $this->Paginator->sort('user_id') ?></th>
-                    <th><?= $this->Paginator->sort('published') ?></th>
                     <th><?= $this->Paginator->sort('created') ?></th>
                     <th><?= $this->Paginator->sort('modified') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($posts as $post): ?>
+                <?php foreach ($tags as $tag): ?>
                 <tr>
-                    <td><?= $this->Number->format($post->id) ?></td>
-                    <td><?= h($post->title) ?></td>
-                    <td><?= h($post->user->username) ?></td>
-                    <td><?= $post->published ? '公開' : '非公開' ?></td>
-                    <td><?= h($post->created) ?></td>
-                    <td><?= h($post->modified) ?></td>
+                    <td><?= $this->Number->format($tag->id) ?></td>
+                    <td><?= h($tag->title) ?></td>
+                    <td><?= h($tag->created) ?></td>
+                    <td><?= h($tag->modified) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $post->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $post->id]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $post->id], ['confirm' => __('Are you sure you want to delete # {0}?', $post->id)]) ?>
+                        <?= $this->Html->link(__('View'), ['action' => 'view', $tag->id]) ?>
+                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $tag->id]) ?>
+                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $tag->id], ['confirm' => __('Are you sure you want to delete # {0}?', $tag->id)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

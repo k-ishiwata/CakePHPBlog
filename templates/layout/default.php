@@ -43,8 +43,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <a href="/"><span>Cake</span>Blog</a>
         </div>
         <div class="top-nav-links">
-            <a target="_blank" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" href="https://api.cakephp.org/4/">API</a>
+            <a href="/posts">投稿一覧</a>
+            <a href="/tags">タグ</a>
         </div>
     </nav>
     <main class="main">
